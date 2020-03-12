@@ -1,0 +1,140 @@
+/**
+ * @Description: 页面公共样式
+ * @Author:
+ * @Param { String }
+ * @Create: 2019/5/24
+ * @Version: 1.0.0
+ */
+.public-page {
+  position: relative;
+}
+.table-toolbar {
+  margin-top: 20px;
+}
+.table-search {
+  background: #fff;
+  margin-bottom: 20px;
+  /deep/.ivu-form {
+    padding: 20px 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    .ivu-form-item {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+    }
+  }
+  .table-search-more-btn {
+    margin-left: 15px;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+      color: #2d8cf0;
+    }
+  }
+}
+.look-bigimg {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  .img-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s;
+    .ivu-icon {
+     position: absolute;
+      left: 50%;
+      top: 50%;
+      display: block;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &:hover {
+    .img-mask {
+      opacity: 1;
+    }
+  }
+}
+.drawer-container {
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+.spin-loader {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 2em;
+  span {
+    width: 0.3em;
+    height: 1em;
+    background-color: #2d8cf0;
+  }
+  span:nth-of-type(1) {
+    animation: grow 1s -0.45s ease-in-out infinite;
+  }
+
+  span:nth-of-type(2) {
+    animation: grow 1s -0.3s ease-in-out infinite;
+  }
+
+  span:nth-of-type(3) {
+    animation: grow 1s -0.15s ease-in-out infinite;
+  }
+
+  span:nth-of-type(4) {
+    animation: grow 1s ease-in-out infinite;
+  }
+
+  @keyframes grow {
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+
+    50% {
+      transform: scaleY(2);
+    }
+  }
+}
+.page-info {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  overflow-y: auto;
+}
+.public-details-group {
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  /deep/.ivu-col {
+    padding: 0 10px;
+  }
+  .group-item {
+    margin-top: 10px;
+    span {
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+    p {
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+}

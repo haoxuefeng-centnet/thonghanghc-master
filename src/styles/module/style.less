@@ -1,0 +1,1036 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, div, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+
+ul, ol, li, dl, dt, dd {
+  list-style: none;
+}
+
+
+.padding_r10 {
+  padding-right: 38px;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+button, input, select, textarea {
+  font: 14px '微软雅黑', '黑体', '宋体', Arial, Verdana, tahoma, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clear {
+  display: block;
+  float: none;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  background: none;
+  border: 0;
+  font-size: 0;
+}
+
+/*a*/
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+a:active {
+  text-decoration: none !important;
+}
+
+a:link {
+  text-decoration: none !important;
+}
+
+
+/*组件重置样式*/
+.el-tabs__item {
+  display: block !important;
+  float: left !important;
+}
+
+/*组件重置样式-end*/
+/*公共样式*/
+.display-none {
+  display: none !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.mtb10 {
+  margin: 10px 0px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.hy-mb15 {
+  margin-bottom: 15px;
+}
+
+.hy-mt15 {
+  margin-top: 15px;
+}
+
+.hy-mt20 {
+  margin-top: 20px;
+}
+
+.color-red {
+  color: red;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.bgfff {
+  background: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.navtable {
+  position: fixed;
+  z-index: 5;
+  top: 70px;
+  background: white;
+  width: 100%;
+
+}
+
+.hy-setting-add {
+  font-size: 38px;
+  line-height: 60px !important;
+}
+
+.hy-mask-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 1000000;
+}
+
+/*公共样式-end*/
+.hy-margin-auto {
+  margin: auto;
+}
+
+.hy-r5px {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+/* 超出部分隐藏 */
+.hy-overflow {
+  overflow: hidden;
+}
+
+/* 超出一行省略 */
+.hy-ellipsis-1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* 超出两行省略 */
+.hy-ellipsis-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal !important;
+  -webkit-line-clamp: 2; /* 这里控制超出几行省略 */
+  -webkit-box-orient: vertical;
+}
+
+/*      元素变成弹性盒            */
+.hy-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.hy-flex1 {
+  flex: 1;
+}
+
+/* 左右浮动 */
+.hy-fl {
+  float: left;
+}
+
+.hy-fr {
+  float: right;
+}
+
+.hy-clearfix {
+  zoom: 1;
+  clear: both;
+  display: block;
+}
+
+/* 宽度100% */
+.hy-w100 {
+  width: 100%;
+}
+
+/*end*/
+
+/*滚动条样式*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 15px;
+  background-color: #eee;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f8f8f9;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, .3);
+  background-color: #f5f5f5;
+}
+
+/*end*/
+
+/*公共组件--上传-身份证*/
+.hy-identity-upload .ivu-upload-select, .hy-identity-upload .ivu-btn, .hy-identity-upload .ivu-upload {
+  width: 100%;
+  display: block !important;
+  height: 150px;
+}
+
+.hy-identity-upload .ivu-upload {
+  position: relative;
+}
+
+.hy-identity-upload .ivu-upload .upload-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+}
+
+.hy-identity-upload .ivu-upload .upload-img img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 140px;
+}
+
+.upload-img-progress {
+  position: absolute;
+  z-index: 10;
+  top: 58px;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/*公共组件--上传-end*/
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+
+/*登录模块*/
+.hy-login {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../assets/login-bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-color: #f0f2f5;
+  position: relative;
+}
+
+.hy-login-con {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 460px;
+/deep/.ivu-form-item {
+  margin-bottom: 50px;
+}
+  /deep/ .ivu-input-group-large .ivu-input {
+    height: 48px;
+  }
+.login-btn {
+  font-size: 20px;
+}
+  .title-con {
+    text-align: center;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      color: #999;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.hy-login-header {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.hy-form-con {
+  padding: 10px 0 0;
+}
+
+.hy-login-tip {
+  font-size: 10px;
+  text-align: center;
+  color: #c3c3c3;
+}
+
+.hy-login-content .ivu-input-group-append {
+  padding: 0;
+  height: 100%;
+  line-height: 100%;
+}
+
+.hy-login-content .code-img {
+  width: 80px;
+  height: 30px;
+
+}
+
+.hy-login-content .code-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/*登录模块-END*/
+/*左侧导航*/
+.layout {
+  background: #f5f7f9;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.layout-header-bar {
+  background: #fff !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.ivu-layout-sider {
+  background: #00152A !important;
+}
+
+.layout-logo-left {
+  width: 90%;
+  height: 30px;
+  background: #5b6270;
+  border-radius: 3px;
+  margin: 15px auto;
+}
+
+.menu-icon {
+  transition: all .3s;
+}
+
+.rotate-icon {
+  transform: rotate(-90deg);
+}
+
+.menu-item span {
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+  transition: width .2s ease .2s;
+}
+
+.menu-item i {
+  transform: translateX(0px);
+  transition: font-size .2s ease, transform .2s ease;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.collapsed-menu span {
+  width: 0px;
+  transition: width .2s ease;
+}
+
+.collapsed-menu i {
+  transform: translateX(5px);
+  transition: font-size .2s ease .2s, transform .2s ease .2s;
+  vertical-align: middle;
+  font-size: 22px;
+}
+
+.logo-con {
+  height: 64px;
+  padding: 10px;
+  line-height: 44px;
+  font-size: 20px;
+  color: white;
+  font-family: "Myriad Pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  background: #002240;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.logo-con img {
+  vertical-align: middle;
+  display: inline;
+  height: 32px;
+  width: auto;
+  margin-left: 15px;
+  margin-right: 10px;
+
+}
+
+.hy-select-dropdown .ivu-select-dropdown {
+  background: #00152A;
+  color: #fff;
+  margin-left: 2px;
+  width: 160px;
+}
+
+.hy-select-dropdown .ivu-select-dropdown .ivu-dropdown-item {
+  height: 35px;
+  line-height: 35px;
+  padding: 0;
+  text-align: left;
+  font-size: 14px !important;
+  text-indent: 14px;
+  color: #aaa;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.hy-select-dropdown .ivu-select-dropdown .ivu-dropdown-item:hover {
+  /*background: #1990FF;*/
+  background: none;
+  color: #f1f1f1;
+
+}
+
+.hy-select-dropdown .drop-menu-a {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.hy-select-dropdown .ivu-dropdown {
+  width: 100%;
+}
+
+.hy-menu-content.ivu-menu-dark, .hy-menu-content.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened, .hy-menu-content.ivu-menu-dark.ivu-menu-vertical .ivu-menu-opened .ivu-menu-submenu-title, .hy-menu-content .ivu-menu-item-active {
+  background: transparent !important;
+  color: #FFF;
+}
+
+.hy-menu-content.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu), .hy-menu-content.ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu) {
+  color: #fff;
+  background: #2E8BF0 !important;
+  text-overflow: clip;
+  overflow: hidden;
+  /*height: 50px;*/
+  /*padding: 0 !important;*/
+  /*line-height: 50px;*/
+  /*text-indent: 15px;*/
+}
+
+.hy-menu-content .ivu-menu-submenu-title:hover {
+  background: transparent !important;
+  color: #fff;
+}
+
+.hy-menu-content .ivu-menu-item:hover {
+  background: transparent !important;
+  color: #fff;
+}
+
+.hy-menu-content .ivu-menu {
+  background: #000C17 !important;
+}
+
+/*左侧导航*——END*/
+/*头部*/
+.layout-header-bar > i {
+  line-height: 64px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-transition: all .3s, padding 0s;
+  transition: all .3s, padding 0s;
+  padding: 0 24px;
+}
+
+.layout-header-bar > i:hover {
+  background: #E6F7FF;
+}
+
+.header-bar {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.header-bar .custom-content-con {
+  float: right;
+  height: auto;
+  padding-right: 20px;
+  line-height: 64px;
+}
+
+.custom-bread-crumb {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header-bar .ivu-breadcrumb a, .header-bar .ivu-breadcrumb > span:last-child {
+  color: #8c8c8c;
+}
+
+.header-bar .ivu-breadcrumb > span:last-child {
+  font-weight: 400;
+}
+
+.hy-header-user-bar-list {
+  margin-left: 20px;
+}
+
+.hy-header-bar-right {
+  float: right;
+  padding-right: 20px;
+  color: #585858;
+}
+
+.hy-header-bar-info {
+
+}
+
+.hy-header-user-bar-list .ivu-dropdown-rel {
+  font-size: 14px;
+}
+
+.hy-header-bar-info .ivu-badge-count {
+  top: 5px;
+}
+
+.full-screen-btn-con .ivu-tooltip-rel {
+  height: 64px;
+  line-height: 64px;
+}
+
+.full-screen-btn-con i {
+  cursor: pointer;
+}
+
+/*头部——END*/
+/*tags*/
+.main .tag-nav-wrapper {
+  padding: 0;
+  height: 40px;
+  background: #F0F0F0;
+  overflow: hidden;
+}
+
+.taglist-moving-animation-item, .taglist-moving-animation-active {
+  opacity: 1;
+  transition: opacity;
+}
+
+.taglist-moving-animation-enter, .taglist-moving-animation-leave-to {
+  opacity: 0;
+  transition: opacity;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.size {
+  width: 100%;
+  height: 100%;
+}
+
+.tags-nav {
+  position: relative;
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tags-nav .close-con {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 32px;
+  background: #fff;
+  text-align: center;
+  z-index: 10;
+}
+
+.tags-nav .btn-con {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  background: #fff;
+  padding-top: 3px;
+  z-index: 10;
+}
+
+.tags-nav .btn-con button {
+  padding: 6px 4px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.tags-nav .btn-con.left-btn {
+  left: 0px;
+}
+
+.tags-nav .btn-con.right-btn {
+  right: 32px;
+  border-right: 1px solid #F0F0F0;
+}
+
+.tags-nav .scroll-outer {
+  position: absolute;
+  left: 28px;
+  right: 61px;
+  top: 0;
+  bottom: 0;
+  -webkit-box-shadow: 0px 0 3px 2px rgba(100, 100, 100, 0.1) inset;
+  box-shadow: 0px 0 3px 2px rgba(100, 100, 100, 0.1) inset;
+}
+
+.tags-nav .scroll-outer .scroll-body {
+  height: calc(100% - 1px);
+  display: inline-block;
+  padding: 1px 4px 0;
+  position: absolute;
+  overflow: visible;
+  white-space: nowrap;
+  -webkit-transition: left .3s ease;
+  transition: left .3s ease;
+}
+
+.tags-nav .scroll-outer .scroll-body .ivu-tag-dot-inner {
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+}
+
+/*tags-END*/
+/*错误页面*/
+.error-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #f8f8f9;
+}
+
+.error-page .content-con {
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
+}
+
+.error-page .content-con img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.error-page .content-con .text-con {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.error-page .content-con .text-con h4 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 80px;
+  font-weight: 700;
+  color: #348EED;
+}
+
+.error-page .content-con .text-con h5 {
+  position: absolute;
+  width: 700px;
+  left: 0px;
+  top: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #67647D;
+}
+
+.error-page .content-con .back-btn-group {
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+}
+
+/*错误页面-END*/
+/*内容区*/
+.hy-content-wrapper {
+  margin: 24px;
+}
+
+/*内容区0-end*/
+/*表单公共样式*/
+.hy-form-content {
+  max-width: 500px;
+}
+
+.hy-submitBox button {
+  width: 100px !important;
+}
+
+.big-dialog .ivu-modal-content-drag {
+  overflow-y: scroll;
+  height: 600px;
+  padding: 50px 0;
+}
+
+.big-dialog .ivu-modal-content-drag .ivu-modal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.ivu-tree-children span:hover {
+  background-color: #d5e8fc;
+}
+
+.hy-relative {
+  position: relative;
+}
+
+.hy-glBox {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  height: 28.5px;
+}
+
+/*表单公共样式-end*/
+
+
+/*查看详情样式*/
+.ivu-row {
+  padding: 5px 0;
+}
+
+.data-left {
+  width: 90px;
+  color: #999;
+  text-align: right;
+  display: inline-block;
+}
+
+.ivu-drawer-no-header .ivu-drawer-body {
+  height: 100%;
+  color: #333;
+  font-size: 14px;
+}
+
+/*end*/
+/*搜索输入框样式*/
+.search-box {
+  width: 330px;
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+}
+
+.hy-drawer-btnBox {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  height: 80px;
+  right: 0px;
+  background: #fff;
+  border-top: 1px solid #e8eaec;
+  padding: 0 16px;
+  z-index: 1022;
+}
+
+.head-top {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  height: 50px;
+  z-index: 888;
+  right: 0px;
+  background: #fff;
+  border-bottom: 1px solid #e8eaec;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  padding: 0 16px;
+}
+
+.hy-close {
+  font-size: 24px;
+  transition: all 0.3s;
+  color: #c5c8ce;
+  cursor: pointer;
+}
+
+.hy-close:hover {
+  color: #ed4014;
+}
+
+.hy-content {
+  padding: 50px 0;
+  overflow: auto;
+  position: absolute;
+  height: 100%;
+  top: 50px;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  padding: 20px 16px 150px 16px;
+}
+
+.ivu-drawer-body {
+  overflow: hidden !important;
+}
+
+.sreach-close {
+  max-height: 50px;
+  overflow: hidden;
+  transition: all .3s ease;
+}
+
+.sreach-show {
+  overflow: visible !important;
+  max-height: 500px;
+}
+
+.hy-card.ivu-card {
+  min-width: 900px;
+}
+
+/*end*/
+
+/*表格公共样式*/
+.ivu-table-cell {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+/*end*/
+/*编辑框自适应*/
+.ql-container {
+  height: 700px !important;
+  min-width: 450px !important;
+}
+
+@media screen and (max-width: 1420px) {
+  .ql-container {
+    height: 680px !important;
+  }
+}
+
+@media screen and (max-width: 936px) {
+  .ql-container {
+    height: 660px !important;
+  }
+}
+
+/*end*/
+
+
+/*全屏添加修改框*/
+.hy-big-shadow {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(55, 55, 55, .6);
+  height: 100%;
+  z-index: 1000;
+}
+
+.hy-big-add {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 256px;
+  background: #f5f7f9;
+  z-index: 1000;
+}
+
+.hy-big-add .ivu-card {
+  height: 100%;
+}
+
+.hy-big-content {
+  position: absolute;
+  top: 80px;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  padding: 20px 16px;
+  overflow: auto;
+}
+
+.marginR {
+  margin-right: 15px;
+}
+
+/*end*/
+.ivu-color-picker-picker .ivu-btn-default {
+  display: none !important;
+}
+
+.power .ivu-card-body {
+  padding: 0 !important;
+}
+
+.ivu-layout-sider-children {
+  height: auto;
+}
+
+.ivu-input-group-large .ivu-input, .ivu-input-group-large > .ivu-input-group-append, .ivu-input-group-large > .ivu-input-group-prepend {
+  padding: 0px 5px !important;
+}
+
+.refresh {
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.refresh:hover {
+  animation: spin 1s linear infinite;
+  color: #2d8cf0;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.ivu-btn-error {
+  margin-left: 10px;
+}
+
+.ivu-btn-primary {
+  margin-left: 10px;
+}
